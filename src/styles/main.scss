@@ -1,0 +1,29 @@
+@use 'variables';
+@import 'tailwindcss';
+
+
+@font-face {
+    font-family: 'Lunasima';
+    src: url('@/assets/fonts/Lunasima-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lunasima';
+    src: url('@/assets/fonts/Lunasima-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+#app {
+    font-family: Lunasima;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: variables.$text-color-primary;
+}
+
+body {
+    background-color: variables.$background-color;
+}
